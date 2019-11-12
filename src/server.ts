@@ -31,11 +31,17 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   //! END @TODO1
   
+  // A Test End Point
+    app.get( "/test", async ( req, res ) => {
+    res.send("a test end point")
+  } );
+  
   // Root Endpoint
   // Displays a simple message to the user
   app.get( "/", async ( req, res ) => {
     res.send("try GET /filteredimage?image_url={{}}")
   } );
+  
   
 
   // Start the Server
